@@ -11,7 +11,8 @@ footer {
     font-weight: bolder;
 }
 
-.header-main-text > p {
+.header-main-text > p,
+.header-links > ul {
     color: #e5e7eb;
     font-size: 18px;
 }
@@ -22,7 +23,7 @@ footer {
 }
 
 button,
-.cta {
+.cta-box {
     background-color: #3882f6;
 }
 
@@ -46,4 +47,89 @@ button,
 .quote > .author {
     font-size: 18px;
     font-weight: bold;
+}
+
+/* custom CSS */
+
+.header-links {
+    display: flex;
+    justify-content: space-between
+    ;
+}
+
+.header-links > ul {
+    display: flex;
+    gap: 10px;
+    text-decoration-style: none;
+}
+
+.header-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d4md-examples {
+    display: flex;
+    gap: 20px;
+}
+
+.example {
+    display: flex;
+    flex-direction: column;
+    border: 5px;
+    border-color: #3882f6;
+    border-radius: 10%;
+    width: 100px;
+    height: 100px;
+    flex: auto;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote > .author {
+    align-self: flex-end;
+    margin-right: 500px;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-box {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cta-box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
