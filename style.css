@@ -1,0 +1,49 @@
+/* colors and font styles given */
+
+header,
+footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.header-main-text > h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.header-main-text > p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button,
+.cta {
+    background-color: #3882f6;
+}
+
+.information > h1 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.quote > p {
+    font: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+}
+
+.quote > .author {
+    font-size: 18px;
+    font-weight: bold;
+}
