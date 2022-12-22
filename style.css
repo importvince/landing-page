@@ -79,24 +79,30 @@ button,
 
 .information {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.d4md-examples {
+.d4md-examples > ul {
     display: flex;
+    flex-direction: row;
     gap: 20px;
 }
 
 .example {
     display: flex;
     flex-direction: column;
-    border: 5px;
-    border-color: #3882f6;
-    border-radius: 10%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     flex: auto;
+}
+
+.example > img {
+    border-style: solid;
+    border-color: #3882f6;
+    border-width: 3px;
+    border-radius: 10%;
 }
 
 .quote {
