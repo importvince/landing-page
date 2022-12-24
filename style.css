@@ -1,4 +1,7 @@
 /* colors and font styles given */
+* {
+    font-family: Arial, Helvetica, sans-serif
+}
 
 header,
 footer {
@@ -28,6 +31,26 @@ button,
     background-color: #3882f6;
 }
 
+button {
+   /* width: 100px;
+    height: 30px; */
+    font-size: 16px;
+    color: #e5e7eb;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;s
+}
+
+.regular-button {
+   border-style: none;
+}
+
+.inverse-button {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #e5e7eb;
+}
+
 .information > h1 {
     font-size: 36px;
     font-weight: bolder;
@@ -36,16 +59,17 @@ button,
 
 .quote {
     background-color: #e5e7eb;
+    padding: 50px 150px;
 }
 
-.quote > p {
-    font: 36px;
+.quote-text {
+    font-size: 36px;
     font-style: italic;
     font-weight: lighter;
     color: #1f2937;
 }
 
-.quote > .author {
+.author {
     font-size: 18px;
     font-weight: bold;
 }
@@ -54,20 +78,31 @@ button,
 
 .header-links {
     display: flex;
-    justify-content: space-between
-    ;
+    justify-content: space-between;
+}
+
+.header-links > .logo {
+    margin-left: 100px;
 }
 
 .header-links > ul {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     list-style-type: none;
+    margin-right: 100px;
 }
 
 .header-main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 70px 100px;
+    gap: 30px;
+}
+
+.header-main > img {
+    width: 400px;
+    height: auto;
 }
 
 .header-main-text {
@@ -77,25 +112,33 @@ button,
     justify-content: center;
 }
 
+.regular-button {
+    width: 100px; /* fix */
+    height: 30px;
+    flex: auto;
+}
+
 .information {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 25px 100px 150px 100px;
 }
 
 .d4md-examples > ul {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    gap: 20px;
+    gap: 50px;
 }
 
 .example {
     display: flex;
     flex-direction: column;
     width: 200px;
-    height: 200px;
-    flex: auto;
+    height: auto;
+    flex: 1 0 100px;
 }
 
 .example > img {
@@ -105,34 +148,42 @@ button,
     border-radius: 10%;
 }
 
-.quote {
+.quote-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
-.quote > .author {
+.author {
     align-self: flex-end;
-    margin-right: 500px;
+    font-weight: bold;
 }
 
-.cta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .cta-box {
-    padding: 20px;
+    padding: 20px 100px;
+    margin: 100px 150px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .cta-box-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start
+    align-items: flex-start;
+    color: #e5e7eb;
+}
+
+.cta-box-text > h3 {
+    font-size: 24px;
+    margin: 20px 0 -15px 0;
+}
+
+.inverse-button {
+    width: fit-content;
+    flex: 0 0 auto;
+    align-self: center;
 }
 
 footer {
@@ -140,3 +191,29 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+/* ideas for next steps:: 
+
+update flex wrap on info section - done, but not perfect. is it possible to avoid the full screen stretch for edison?
+
+update text color in cta section - done
+update size of cta section  -done
+
+fix gap between h3 and p in cta section - done
+
+fix button position in cta section - done
+
+update edison photo to match size if possible
+
+update gaps between pics and description - done
+
+update gap in header links - done
+
+update shrink behavior of all sections
+
+add links to buttons
+
+fix grey box in quote section to full page width
+
+*/
+
