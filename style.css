@@ -32,10 +32,8 @@ button,
 }
 
 button {
-   /* width: 100px;
-    height: 30px; */
     font-size: 16px;
-    color: #e5e7eb;
+    color: #F9FAF8;
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
@@ -57,9 +55,10 @@ button {
     color: #1f2937;
 }
 
-.quote {
+.quote-container {
     background-color: #e5e7eb;
     padding: 50px 150px;
+    margin: 0px -20px;
 }
 
 .quote-text {
@@ -75,6 +74,12 @@ button {
 }
 
 /* custom CSS */
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: -10px;
+}
 
 .header-links {
     display: flex;
@@ -101,8 +106,9 @@ button {
 }
 
 .header-main > img {
-    width: 400px;
-    height: auto;
+    flex: 1;
+    min-width: 400px;
+    min-height: 0;
 }
 
 .header-main-text {
@@ -113,7 +119,7 @@ button {
 }
 
 .regular-button {
-    width: 100px; /* fix */
+    width: 100px;
     height: 30px;
     flex: auto;
 }
@@ -165,6 +171,7 @@ button {
     margin: 100px 150px;
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 .cta-box-text {
@@ -172,18 +179,20 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: #e5e7eb;
+    color: #F9FAF8;
 }
 
 .cta-box-text > h3 {
     font-size: 24px;
-    margin: 20px 0 -15px 0;
+    margin: 20px 0 -5px 0;
 }
 
 .inverse-button {
     width: fit-content;
+    height: auto;
     flex: 0 0 auto;
     align-self: center;
+    padding: 8px;
 }
 
 footer {
@@ -191,29 +200,3 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
-/* ideas for next steps:: 
-
-update flex wrap on info section - done, but not perfect. is it possible to avoid the full screen stretch for edison?
-
-update text color in cta section - done
-update size of cta section  -done
-
-fix gap between h3 and p in cta section - done
-
-fix button position in cta section - done
-
-update edison photo to match size if possible
-
-update gaps between pics and description - done
-
-update gap in header links - done
-
-update shrink behavior of all sections
-
-add links to buttons
-
-fix grey box in quote section to full page width
-
-*/
-
